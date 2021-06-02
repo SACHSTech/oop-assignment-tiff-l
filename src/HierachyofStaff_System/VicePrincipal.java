@@ -23,8 +23,8 @@ public class VicePrincipal extends Faculty {
     System.out.println("Email Address: " + getEmailAddress());
     System.out.println("Age: " + getFacultyAge());
     System.out.println("Wage: $" + getFacultyWage());
-    System.out.println("Number of current projects:" + numOfProjects);
-    return "";
+    System.out.println("Number of current projects: " + numOfProjects);
+    return "__________________________";
   }
 
 }
