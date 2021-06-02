@@ -5,9 +5,11 @@
 
 *Insert Class Diagram here*  
 
-
+![Class Diagram](https://github.com/SACHSTech/oop-assignment-tiff-l/blob/main/OOPClassDiagram.png)
 
 ## Summary
 *Include a brief summary that describes your system that your are modelling*
+
+
 
 
