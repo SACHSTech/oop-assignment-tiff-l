@@ -31,7 +31,7 @@ public class Teacher extends Faculty{
     System.out.println("Wage: $" + getFacultyWage());
     System.out.println("Number of Classes: " + totalNumOfClasses);
     System.out.println("Class size: " + totalNumOfStudent);
-    return "";
+    return "__________________________";
   }
 
 }

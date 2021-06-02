@@ -34,7 +34,7 @@ public class Principal extends Faculty{
     System.out.println("Age: " + getFacultyAge());
     System.out.println("Wage: $" + getFacultyWage());
     System.out.println("Bonus: $" + yearlyBonus);
-    return "";
+    return "__________________________";
   }
 
 }
