@@ -74,9 +74,6 @@ public class Main{
       } else if(choice.equals("3")){
         theSchool.printTeachers();     
        
-          System.out.println(newTeacher);
-        }
-
         System.out.println("Press enter again to exit"); 
         choice = key.readLine(); 
 
