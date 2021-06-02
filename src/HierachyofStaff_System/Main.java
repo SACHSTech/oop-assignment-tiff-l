@@ -266,7 +266,7 @@ public class Main {
 
         //Calcualte + print the total payroll
 				payrollTotal = Principal.getPrincipalSalary() + theSchool.getVpSalary() + theSchool.getTeacherSalary();
-				System.out.println(payrollTotal);
+				System.out.println("Total Payroll: $" +payrollTotal);
 
         //Print the principal's bonus
 				System.out.println("Principal's bonus (2020): $" + Evans.getPrincipalBonus());
