@@ -13,16 +13,25 @@ import HierachyofStaff_System.*;
 */
 
 public class Position extends Faculty{
-
+  //Instance varaible
   private int totalHours;
+  private String jobTitle;
 
-  public Position(String first, String surname, String email, int age, int wage, int hours) {
+  public Position(String first, String surname, String job, String email, int age, int wage, int hours) {
     // Prompts parent constructor in faculty class
     super(first, surname, email, age, wage);
+    jobTitle = job; 
     totalHours = hours;
   }
 
-
+  /**
+  * Getter method - for position's job title
+  * @return position's job title
+  */
+  public String getJobTitle(){
+    return jobTitle;
+  }
+  
   /**
   * Getter method - number of hours for position
   * @return position's hours
@@ -40,10 +49,11 @@ public class Position extends Faculty{
     System.out.println("Teacher");
     System.out.println("First Name: " + getFirstName());
     System.out.println("Last Name: " + getLastName());
+    System.out.println("Job Title: " + getJobTitle());
     System.out.println("Email Address: " + getEmailAddress());
     System.out.println("Age: " + getFacultyAge());
     System.out.println("Wage: $" + getFacultyWage());
-    System.out.println("Hours/week " + totalHours);
+    System.out.println("Hours/week: " + totalHours);
     return "__________________________";
   }
 

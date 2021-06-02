@@ -73,7 +73,7 @@ public class Main {
 		Harper = new Teacher("Collins", "Harper", "Collins.Harper@ycdsbk12.ca", 20, 80000, 4, 22);
 		Lee = new Teacher("Grace", "Lee", "Grace.Lee@ycdsbk12.ca", 35, 88000, 2, 28);
 		Fabroa = new Teacher("Eric", "Fabroa", "Eric.Fabroa@ycdsbk12.ca", 45, 93000, 4, 30);
-		Brent = new Position("Jack", "Brent", "Jack.Brent@ycdsbk12.ca", 50, 55000, 33);
+		Brent = new Position("Jack", "Brent", "Janitor", "Jack.Brent@ycdsbk12.ca", 50, 55000, 33);
 
     //Creating: object - school
 		School theSchool = new School(Evans);
@@ -221,6 +221,9 @@ public class Main {
 					System.out.print("Email: ");
 					String email = key.readLine();
 
+          System.out.print("Job Title: ");
+					String jobTitle = key.readLine();
+
 					System.out.print("Age: ");
 					int age = Integer.parseInt(key.readLine());
 
@@ -228,7 +231,7 @@ public class Main {
 					int hours = Integer.parseInt(key.readLine());
 
           //Creating new position with information inputed above 
-					newPosition = new Position(first, surname, email, age, 55000, hours);
+					newPosition = new Position(first, surname, jobTitle, email, age, 55000, hours);
 					theSchool.addPosition(newPosition);
           //Prints the new position added to console
 					System.out.println(newPosition);
@@ -262,19 +265,65 @@ public class Main {
 				System.out.println("Other Positions: " + theSchool.getTotalPositions());
 
         //Calcualte + print the total payroll
-				payrollTotal = Principal.getPrincipalPayroll() + theSchool.getVpPayroll() + theSchool.getTeacherPayroll();
+				payrollTotal = Principal.getPrincipalSalary() + theSchool.getVpSalary() + theSchool.getTeacherSalary();
 				System.out.println(payrollTotal);
 
         //Print the principal's bonus
 				System.out.println("Principal's bonus (2020): $" + Evans.getPrincipalBonus());
         System.out.println("");
-			  System.out.println("--------------------------------------------");
+			  System.out.println("-   -   -   -   -   -   -   -   -   -   -   -");
+
+        //times out program, which allows user to read the information before moving on
+        try {
+          Thread.sleep(1500);
+        } catch(InterruptedException ex) {
+          Thread.currentThread().interrupt();
+        } 
         
         //Print the number of projects each vp is currently working on
         System.out.println("");
 				System.out.println("Vice Principal's Number of Current Projects");
+        System.out.println("");
 				theSchool.printProjects();
+        System.out.println("");
+			  System.out.println("-   -   -   -   -   -   -   -   -   -   -   -");
+        
+        //times out program, which allows user to read the information before moving on
+        try {
+          Thread.sleep(1500);
+        } catch(InterruptedException ex) {
+          Thread.currentThread().interrupt();
+        } 
 
+        //Print the teacher's class info 
+        System.out.println("");
+				System.out.println("Teacher's class information: ");
+        System.out.println("");
+				theSchool.printClass();
+			  System.out.println("-   -   -   -   -   -   -   -   -   -   -   -");
+
+        //times out program, which allows user to read the information before moving on
+        try {
+          Thread.sleep(1500);
+        } catch(InterruptedException ex) {
+          Thread.currentThread().interrupt();
+        } 
+
+        //Print the position info
+        System.out.println("");
+				System.out.println("Specific position information: ");
+        System.out.println("");
+				theSchool.printJobs();
+			  System.out.println("-   -   -   -   -   -   -   -   -   -   -   -");
+
+        //times out program, which allows user to read the information before moving on
+        try {
+          Thread.sleep(1500);
+        } catch(InterruptedException ex) {
+          Thread.currentThread().interrupt();
+        } 
+
+        System.out.println("");
         System.out.println("Please select one of the following options or click another key to exit");
         for(String Menu : menu) {
           System.out.println(Menu); 

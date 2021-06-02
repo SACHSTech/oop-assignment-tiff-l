@@ -4,27 +4,53 @@ import HierachyofStaff_System.*;
 
 public class Principal extends Faculty{
 
+  // Instance variables
   private int yearlyBonus;
 
-  private static int principalPayroll = 0;
+  //class varibale
+  private static int principalSalary = 0;
+
+  /**
+    * Constructor - creates a new principal instance
+    * @param first - principal's first name
+    * @param surname - principal's last name
+    * @param email - principal's email address
+    * @param age - principal's age
+    * @param wage - principal's wage
+    * @param bonus - principal's bonus
+  */
 
   public Principal(String first, String surname, String email, int age, int wage, int bonus) {
-
+    // Prompts parent constructor in faculty class
     super(first, surname, email, age, wage);
     yearlyBonus = bonus;
 
-    principalPayroll = wage + bonus;
+    //Calculate total salary
+    principalSalary = wage + bonus;
 
   }
 
-  public static int getPrincipalPayroll() {
-    return principalPayroll;
+    
+  /**
+  * Getter method - principal's salary
+  * @return princiapl's salary
+  */
+  public static int getPrincipalSalary() {
+    return principalSalary;
   }
 
+  /**
+  * Getter method - princiapl's bonus
+  * @return princiapl's bonus
+  */
   public int getPrincipalBonus() {
     return yearlyBonus;
   }
 
+  /**
+  * String representation of principal
+  * @return properties pertaining this principal
+  */  
   public String toString() {
     System.out.println("");
     System.out.println("Principal");

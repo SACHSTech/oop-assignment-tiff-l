@@ -7,11 +7,21 @@ public class Teacher extends Faculty{
   private int totalNumOfClasses;
   private int totalNumOfStudent; 
 
-  public Teacher(String first, String surname, String email, int age, int wage, int classNum, int student) {
+  /**
+    * Constructor - creates a new teacher instance
+    * @param first - teacher's first name
+    * @param surname - teacher's last name
+    * @param email - teacher's email address
+    * @param age - teacher's age
+    * @param classNum - number of classes each teacher has
+    * @param students - number of students each teacher has
+  */
+
+  public Teacher(String first, String surname, String email, int age, int wage, int classNum, int students) {
     // Prompts parent constructor in faculty class
     super(first, surname, email, age, wage);
     totalNumOfClasses = classNum;
-    totalNumOfStudent = student; 
+    totalNumOfStudent = students; 
   }
 
   /**

@@ -6,6 +6,16 @@ public class VicePrincipal extends Faculty {
 
   private int numOfProjects;
 
+  /**
+    * Constructor - creates a new vp instance
+    * @param first - vp's first name
+    * @param surname - vp's last name
+    * @param email - vp's email address
+    * @param age - vp's age
+    * @param wage - vp's wage
+    * @param numProj - number of current project each vp is working on 
+  */
+
   public VicePrincipal(String first, String surname, String email, int age, int wage, int numProj) {
     // Prompts parent constructor in faculty class
     super(first, surname, email, age, wage);
