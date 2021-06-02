@@ -19,23 +19,43 @@ public class Faculty{
     facultyWage = wage;
   }
 
+  /**
+  * Getter method - faculty member's first name
+  * @return faculty member's first name
+  */
   public String getFirstName(){
     return firstName;
   }
 
+  /**
+  * Getter method - faculty member's last name
+  * @return faculty member's last name
+  */
   public String getLastName(){
     return lastName;
   }
 
+  /**
+  * Getter method - faculty member's email
+  * @return faculty member's email
+  */
   public String getEmailAddress(){
     return emailAddress;
   }
 
+  /**
+  * Getter method - faculty member's age
+  * @return faculty member's age
+  */
   public int getFacultyAge(){
     return facultyAge;
 
   }
 
+  /**
+  * Getter method - faculty member's wage
+  * @return faculty member's wage
+  */
   public int getFacultyWage(){
     return facultyWage;
   }

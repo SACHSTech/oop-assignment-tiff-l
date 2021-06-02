@@ -7,14 +7,23 @@ public class VicePrincipal extends Faculty {
   private int numOfProjects;
 
   public VicePrincipal(String first, String surname, String email, int age, int wage, int numProj) {
+    // Prompts parent constructor in faculty class
     super(first, surname, email, age, wage);
     numOfProjects = numProj;
   }
 
+  /**
+  * Getter method - number of projects
+  * @return vp's projects
+  */
   public int getNumOfProjects(){
     return numOfProjects;
   }
 
+  /**
+  * String representation of vp
+  * @return properties pertaining this vp
+  */
   public String toString(){
     System.out.println("");
     System.out.println("Principal");

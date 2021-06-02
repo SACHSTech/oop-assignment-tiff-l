@@ -6,26 +6,45 @@ import java.util.ArrayList;
 
 public class School{
 
+  //Instance variables
   private Faculty faculty;
   private ArrayList<VicePrincipal> vps;
   private ArrayList<Teacher> teachers;
   private ArrayList<Position> positions;
 
+  /**
+    * Constructor: creating a new school instance
+    * @param theFaculty - the Faculty
+    */
   public School(Faculty theFaculty){
     faculty = theFaculty;
+
+    //initialize the following lists: vps, teachers, positions
     vps = new ArrayList<VicePrincipal>();
     teachers = new ArrayList<Teacher>();
     positions = new ArrayList<Position>();
   }
 
+  /**
+  * Method to add new vp
+  * @return void
+  */
   public void addVicePrincipal(VicePrincipal newVicePres){
     vps.add(newVicePres);
   }
 
+  /**
+  * Method to add new teacher
+  * @return void
+  */
   public void addTeacher(Teacher newTeacher){
     teachers.add(newTeacher);
   }
 
+  /**
+  * Method to add new position
+  * @return void
+  */
   public void addPosition(Position newPosition){
     positions.add(newPosition);
   }
