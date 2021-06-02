@@ -71,9 +71,60 @@ public class Main{
       } else if(choice.equals("2")){
         theSchool.printVicePrincipals();   
 
+        System.out.println("Do you want to add another vice principal? (options: yes/no"); 
+        String addVicePrincipal = key.readLine(); 
+        if(addVicePrincipal.equalsIgnoreCase("yes")){
+          System.out.print("First Name: ");
+          String first = key.readLine();
+
+          System.out.print("Last Name: ");
+          String surname = key.readLine();
+
+          System.out.print("Email: ");
+          String email = key.readLine();
+
+          System.out.print("Age: ");
+          int age = Integer.parseInt(key.readLine());
+
+          System.out.print("Number of Projects: ");
+          int proj = Integer.parseInt(key.readLine());
+
+          newVicePrincipal = new VicePrincipal(first, surname, email, age, 118000, proj);
+          theSchool.addVicePrincipal(newVicePrincipal);
+          System.out.println(newVicePrincipal);
+        }
+
+        System.out.println("Press enter again to exit"); 
+        choice = key.readLine(); 
+
       } else if(choice.equals("3")){
         theSchool.printTeachers();     
-       
+        System.out.println("Do you want to add another teacher? (options: yes/no"); 
+        String addTeacher = key.readLine(); 
+        if(addTeacher.equalsIgnoreCase("yes")){
+          System.out.print("First Name: ");
+          String first = key.readLine();
+
+          System.out.print("Last Name: ");
+          String surname = key.readLine();
+
+          System.out.print("Email: ");
+          String email = key.readLine();
+
+          System.out.print("Age: ");
+          int age = Integer.parseInt(key.readLine());
+
+          System.out.print("Number of Classes: ");
+          int numClass = Integer.parseInt(key.readLine());
+
+          System.out.print("Class Size: ");
+          int sizeClass = Integer.parseInt(key.readLine());
+
+          newTeacher = new Teacher(first, surname, email, age, 118000, numClass, sizeClass);
+          theSchool.addTeacher(newTeacher);
+          System.out.println(newTeacher);
+        }
+
         System.out.println("Press enter again to exit"); 
         choice = key.readLine(); 
 
@@ -81,10 +132,27 @@ public class Main{
         System.out.println(" "); 
         System.out.println("Here's a summary");
         System.out.println(""); 
-     
+        int total = theSchool.getTotalVPs() + theSchool.getTotalTeachers() + 1; 
+        System.out.println("Faculty Headcount: " + total);
+        System.out.println("Principal: 1");
+        System.out.println("Vice Principals: " + theSchool.getTotalVPs());
+        System.out.println("Teachers: " + theSchool.getTotalTeachers());
+
+        payrollTotal = Principal.getPrincipalPayroll() + theSchool.getVpPayroll() + theSchool.getTeacherPayroll();
+        System.out.println(payrollTotal);
+
+        System.out.println("Principal's bonus 2020: $" + Evans.getPrincipalBonus());
+        System.out.println("");
+        System.out.println("\nVice Principal's Number of Current Projects");
+        theSchool.printProjects();
+       // System.out.println("")
+        //System.out.println("")
+
+        System.out.println("Press enter again to exit"); 
+        choice = key.readLine(); 
+
       }
     }
-
 
 
   }
