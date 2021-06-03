@@ -36,7 +36,7 @@ public class VicePrincipal extends Faculty {
   */
   public String toString(){
     System.out.println("");
-    System.out.println("Principal");
+    System.out.println("Vice Principal");
     System.out.println("First Name: " + getFirstName());
     System.out.println("Last Name: " + getLastName());
     System.out.println("Email Address: " + getEmailAddress());

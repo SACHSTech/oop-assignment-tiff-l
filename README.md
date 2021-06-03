@@ -10,6 +10,4 @@
 ## Summary
 *Include a brief summary that describes your system that your are modelling*
 
-This system models a heirachy of faculty members at a School. The user can use the following database to find information about each faculty member: principal, vice principals, teachers, and other positions. This program provides information such as the faculty member's name, email, age and salary. Depending the faculty member's category there will be special information regarding their job. For example, in teachers section we can access the number of classes they're teaching and the class size. The user will have the chance to go through each level of the heirachy from the principal, to the vice principals, to the teachers, to the other positions and a tthe end there is a summary/overview of all the information. 
-
-
+This system models a hierarchy of faculty members at a School. The user can use the following database to find information about each faculty member: principal, vice principals, teachers, and other positions. This program provides information such as the faculty member's name, email, age and salary. Depending on the faculty member's category there will be special information regarding their job. For example, in the teacher's section, we can access the number of classes they're teaching and the class size. The user will have the chance to go through each level of the hierarchy from the principal, to the vice principals, to the teachers, to the other positions and a the end there is a summary/overview of all the information. 
